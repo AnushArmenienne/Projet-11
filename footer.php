@@ -15,7 +15,6 @@ wp_nav_menu( array(
 ?>
 
 
-<h1>NATHALIE MOTAfooter</h1>
 <p>TOUS DROITS RESERVES</p>
 
 

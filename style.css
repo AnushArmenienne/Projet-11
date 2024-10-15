@@ -35,3 +35,55 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url('/app/public/wp-content/themes/Mota/fonts/SpaceMono-Regular.ttf') 
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url('/app/public/wp-content/themes/Mota/fonts/SpaceMono-Italic.ttf') 
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url('/app/public/wp-content/themes/Mota/fonts/SpaceMono-BoldItalic.ttf') 
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('/app/public/wp-content/themes/Mota/fonts/Poppins-Light.ttf') 
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('/app/public/wp-content/themes/Mota/fonts/Poppins-Medium.ttf') 
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('<?php echo get_template_directory_uri(); ?>/fonts/MyCustomFont.woff2') format('woff2'),
+         url('<?php echo get_template_directory_uri(); ?>/fonts/MyCustomFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
