@@ -1,27 +1,89 @@
-/* The Modal (background) */
+/*
+Theme Name: NathalieMota
+Theme URI: https://NathalieMotawp.io
+Author: Audrey Belabbes 
+Author URI: https://dysign.fr
+Description: Site de partage de photos de Nathalie Mota
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url('/wp-content/themes/NathalieMota/fonts/Space_Mono/SpaceMono-Regular.ttf') ;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url('/wp-content/themes/NathalieMota/fonts/Space_Mono/SpaceMono-Italic.ttf');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url('/wp-content/themes/NathalieMota/fonts/Space_Mono/SpaceMono-Italic.ttf');
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('/wp-content/themes/NathalieMota/fonts/Poppins/Poppins-Regular.ttf');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('/wp-content/themes/NathalieMota/fonts/Poppins/Poppins-Regular.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+}
+
+/*navigation*/
+
+ul#menu-navigation {
+    list-style: none;
+}
+
+div#nav {
+    display: flex;
+}
+
+
+/* La modale (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; /* disparait par défaut*/
+    position: fixed; /* reste en place */
+    z-index: 1; 
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow: auto; /* scroll si nécessaire*/
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
 }
 
-/* Modal Content/Box */
+/* contenant de la modale */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; /* 15% du haut et du centre */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%;
 }
 
-/* The Close Button */
+/* bouton de fermeture */
 .close {
     color: #aaa;
     float: right;
@@ -34,56 +96,4 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
-
-
-@font-face {
-    font-family: 'Space Mono', monospace;
-    src: url('/app/public/wp-content/themes/Mota/fonts/SpaceMono-Regular.ttf') 
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Space Mono', monospace;
-    src: url('/app/public/wp-content/themes/Mota/fonts/SpaceMono-Italic.ttf') 
-    font-style: italic;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Space Mono', monospace;
-    src: url('/app/public/wp-content/themes/Mota/fonts/SpaceMono-BoldItalic.ttf') 
-    font-style: italic;
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Poppins', sans-serif;
-    src: url('/app/public/wp-content/themes/Mota/fonts/Poppins-Light.ttf') 
-    font-style: normal;
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: 'Poppins', sans-serif;
-    src: url('/app/public/wp-content/themes/Mota/fonts/Poppins-Medium.ttf') 
-    font-style: normal;
-    font-weight: 500;
-}
-
-
-
-
-
-@font-face {
-    font-family: 'MyCustomFont';
-    src: url('<?php echo get_template_directory_uri(); ?>/fonts/MyCustomFont.woff2') format('woff2'),
-         url('<?php echo get_template_directory_uri(); ?>/fonts/MyCustomFont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    font-family: 'MyCustomFont', sans-serif;
 }
